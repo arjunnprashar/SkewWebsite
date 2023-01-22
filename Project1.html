@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+
+    <title>Skeu</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/Project1.css">
+    
+
+  </head>
+  <body>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+   <div class="aaaaaa1">
+    <div class="eyes">
+      <div class="eye">
+        <div class="ball"></div>
+      </div>
+  
+      <div class="eye">
+        <div class="ball" id="ball1"></div>
+      </div>
+    </div>
+  </div>
+    
+        <div class="container aaaaaa1"> 
+          <div class="row">
+            <div class="col-md-8 col-xs-8">
+              <nav id="top-nav">
+                <ul class="nav-list transistion" id="nav-list">
+                  <li>
+                    <a class="active" href="Project1.html">
+                      <button class="btn">Home</button>
+                    </a>
+                  </li>
+                  
+                  <li><a class="active" href="About.html"><button class="btn">About-us</button></a></li>
+                    <li>
+                      <div class="dropdown">
+                      <button class="btn">Categories</button>
+                      <div class="dropdown-content">
+                        <a href="Mobile.html">Phones</a>
+                        <a href="GPU.html">GPUs</a>
+                        <a href="CPUSubPart.html">CPUs</a>
+                        <a href="Headphones.html">HeadPhones</a>
+                      </div>
+                    </div>
+                    </li>
+                  </ul>
+
+                  <ul class="logindiv">
+                    <li><a class="active1 btn1" href="PremiumPage.html">Buy Skeu Premium</a></li>
+                    <li><a class="active1 btn1" href="Login.html">Login or Sign Up</a></li>
+                  </ul>
+              </nav>
+            </div>
+            <p>&nbsp;</p>
+            <div class="aaaaaa1">
+            <h1 id="header-logo" class="image-text">
+              <a  class="Heading" href="Project1.html">
+                SKEU
+              </a>
+            </h1>
+            </div>
+            <div class="col-md-4 col-xs-4">
+              
+            </div>
+            
+          </div> 
+        </div> 
+
+     
+        <P>&nbsp;</P>
+        <P>&nbsp;</P>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        
+    
+    <section id="Categories">
+      
+					<div class="aaa1">
+						<a  href="Mobile.html">
+							<img src="Main Page Images/iphone12.png" alt="Phones" class="image1">
+						</a>
+                    </div>
+          
+                    <p>&nbsp;</p>
+	  
+	  
+          <p>
+					<div class="aaa2">
+						<a  href="GPU.html">
+							<img src="Main Page Images/3090.png" alt="Graphic Cards" class="image2">
+						</a>
+                    </div>
+                  </p>  
+					
+                  <p>&nbsp;</p>
+	  
+                  <div class="aaa3">
+                    <a  href="CPUSubPart.html">
+                      <img src="Main Page Images/CPU.png" alt="CPUs" class="image3">
+                    </a>
+                            </div>
+	  
+                            <p>&nbsp;</p>
+                            <p>
+                              <div class="aaa4">
+                                <a  href="Headphones.html">
+                                  <img src="Main Page Images/HeadPhone.png" alt="HeadPhones" class="image4">
+                                </a>
+                                        </div>
+                                      </p> 
+    </section> 
+    <p>&nbsp;</p>
+ 
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="footer-list">
+              <hr>
+              <p>&nbsp;</p>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          
+          <div class="col-md-12">
+            <p><a href="" class="contact">Contact Us!-skeutech@gmail.com</a>
+              
+              <a href="" class="rights-reserved" style="margin-right: 10px; float: right;">© 2021 Skeu. All rights reserved.</a></p>
+              
+          </div>
+        </div>
+      </div>
+    </footer>
+	
+    
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+	
+
+	<script src="JS/Project1.js"></script>
+
+  <script>
+    var balls = document.getElementsByClassName("ball");
+    document.onmousemove = function(){
+      var x = event.clientX * 100 / window.innerWidth + "%";
+      var y = event.clientY * 100 / window.innerHeight + "%";
+  
+      for(var i=0;i<2;i++){
+        balls[i].style.left = x;
+        balls[i].style.top = y;
+        balls[i].style.transform = "translate(-"-x-",-"+y+")";
+      }
+    }
+  </script>
+  <script>
+    var modal = document.getElementById('id01');
+    
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+  </body>
+</html>

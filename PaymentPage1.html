@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>
+            Skeu | Payment
+        </title>
+
+        <link rel="stylesheet" href="CSS/PaymentPage.CSS">
+    </head>
+
+    <body>
+        <p>&nbsp;</p>
+        <ul class="nav-list transistion" id="nav-list">
+            <li>
+                <a class="active" href="Project1.html">
+                  <button class="btn">Click To Return Home</button>
+                </a>
+            </li>
+        </ul>
+        <div class="app-container">
+            <div class="top-box">
+                <p><span class="left-icon">&#x2190;</span>
+                    CHECKOUT
+                    <span class="right-icon">&#xb7;&#xb7;&#xb7;</span></p>
+            </div>
+
+            <div class="middle-box">
+                <h1><span>₹</span>199</h1>
+                <p>Pay to Skeu Tech</p>
+                <p>Payment will be reflected in 1-2 business days</p>
+            </div>
+            <form action="https://paytm.com">
+                <button type="submit" class="payment-option-btn1">Pay with Paytm</button>
+            </form>
+            <form action="https://www.bhimupi.org.in/">
+                <button type="submit" class="payment-option-btn2">Pay with UPI</button>
+            </form> 
+            <form action="https://bitcoin.org/en/">
+                <button type="submit" class="payment-option-btn3">Pay with Bitcoin</button>
+            </form>
+                <form action="Project1.html">
+                <div class="card-details">
+                    <p>Pay using Credit or Debit Card</p>
+                    <div class="card-num-field-group">
+                        <label>Card Number</label><br>
+                        <input type="text" class="card-num-field" minlength="16" maxlength="16" placeholder="xxxx-xxxx-xxxx-xxxx" required>                      
+                    </div>
+
+                    <div class="date-field-group">
+                        <label>Expiry Date</label><br>
+                        <input type="text" minlength="2" maxlength="2" class="date-field" placeholder="mm" required>                          
+                        <input type="text" minlength="4" maxlength="4" class="date-field" placeholder="yyyy" required>
+                    </div>
+
+                    <div class="cvc-field-group">
+                        <label>CVC</label><br>
+                        <input type="password" minlength="3" maxlength="3" class="cvc-field" placeholder="xxx" required>
+                    </div>
+    
+                    <div class="name-field-group">
+                        <label>Card Holder Name</label><br>
+                        <input type="text" class="name-field" placeholder="Full Name" required>
+                    </div>
+                    <a href="Project1.html">
+                    <button type="submit" class="pay-btn">Pay Now</button>
+                </a>
+                </div>
+                
+            </form>
+            </div>
+            </div>
+        </div>
+        
+        
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+        <script src="JS/PaymentPage.js"></script>
+        
+    </footer>
+         
+    </body>
+</html>
